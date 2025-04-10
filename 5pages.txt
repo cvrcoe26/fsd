@@ -1,0 +1,14 @@
+create 5 html pages in a folder and follow the below instructions
+git init
+git add .
+git commit -m "Initial commit with 5 pages"
+Go to https://github.com
+Click "New Repository"
+add the Repository name as myapp and click "create repository"
+git remote add origin https://github.com/your-username/myapp.git
+git branch -M main
+git push -u origin main
+
+exploring push,pull,fetch
+git fetch     # Fetches changes but doesn’t merge
+git pull      # Fetches + merges remote changes into your local

@@ -1,0 +1,33 @@
+first, create a repository and create some files in it
+git clone https://github.com/your-username/repo-name.git
+cd repo-name
+Edit any file using your editor (e.g. index.html, style.css, etc.)
+git add .
+git commit -m "Modified UI and content"
+git push origin main
+
+
+git checkout -b header-part
+make some changes
+git add . && git commit -m "Added header" && git push origin header-part
+
+git checkout main
+git checkout -b footer-part
+make some changes (dont make changes to a same line in the above and the current step)
+git add . && git commit -m "Added footer" && git push origin footer-part
+git checkout main
+git pull origin main
+
+git merge header-part
+git merge footer-part
+git push origin main
+
+
+Publish via GitHub Pages
+Go to your repository on GitHub.
+Click on Settings → Pages. (left side menu -> code and automation)
+Under Branch, choose:
+Branch: main
+Folder: / (root)
+Click Save.
+After a few seconds, access the app at https://your-username.github.io/repo-name/
