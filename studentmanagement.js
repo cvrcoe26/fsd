@@ -1,5 +1,5 @@
 // first create a folder
-// command prompt navigate to that folder
+// open command prompt (terminal) and navigate to that folder
 // run the following commands
 // npm init -y
 // npm install express
@@ -50,14 +50,27 @@ app.listen(3000, () => console.log('API running'));
 
 // To test the API, use Postman
 // 1. Create a new student
-//    method: POST http://localhost:3000/students
-//    Body: { "name": "John Doe", "age": 20 }
+//    method: POST 
+      url:     http://localhost:3000/students
+//    Body: 
+        {
+          "name":"cvr",
+          "age":20
+        }
 // 2. Get all students
-//    method: GET http://localhost:3000/students
+//    method: GET 
+      url:     http://localhost:3000/students
 // 3. Get a student by ID
-//    method: GET http://localhost:3000/students/1
+//    method: GET 
+      url:      http://localhost:3000/students/1
 // 4. Update a student
-//    method: PUT http://localhost:3000/students/1
-//    Body: { "name": "Jane Doe", "age": 21 }
+//    method: PUT 
+      url:     http://localhost:3000/students/1
+//    Body: 
+      { 
+        "name": "cvr",
+        "age": 21
+      }
 // 5. Delete a student
-//    method: DELETE http://localhost:3000/students/1
+//    method: DELETE 
+      url:      http://localhost:3000/students/1
