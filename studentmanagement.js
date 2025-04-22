@@ -48,7 +48,7 @@ app.delete('/students/:id', (req, res) => {
 
 app.listen(3000, () => console.log('API running'));
 
-// To test the API, use Postman
+// To test the API, use Postman (app) => if it is not working, use thunderclient vscode extension
 // 1. Create a new student
 //    method: POST 
       url:     http://localhost:3000/students
