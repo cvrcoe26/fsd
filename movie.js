@@ -7,6 +7,7 @@
 // run the following command to start the server
 // node app.js
 
+/// if mongodb is not installed, install it from https://www.mongodb.com/try/download/community-kubernetes-operator
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
