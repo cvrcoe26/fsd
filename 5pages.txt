@@ -1,13 +1,26 @@
-create 5 html pages in a folder and follow the below instructions
+// create a folder ( mkdir foldername)
+// navigate to that folder (cd foldername)
+// create 5 html files in the above created folder
+
+// login to your github account in the default browser
+run the below commands one by one
+
 git init
+git config user.name "your_github_username"
+git config  user.email "your_github_email"
 git add .
 git commit -m "Initial commit with 5 pages"
+
 Go to https://github.com
 Click "New Repository"
 add the Repository name as myapp and click "create repository"
+
 git remote add origin https://github.com/your-username/myapp.git
 git branch -M main
 git push -u origin main
+
+// a popup will open, asking you to sign in with your browser or sign in with a code
+// choose signin with your browser and authenticate it with your github account
 
 exploring push,pull,fetch
 git fetch     # Fetches changes but doesn’t merge
