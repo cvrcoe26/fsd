@@ -50,4 +50,4 @@ app.listen(3000, () => console.log('Server running'));
 <p>Condition: <%= condition %></p>
 
 
-/// access the app at: http://localhost:3000
+// access the app at: http://localhost:3000
