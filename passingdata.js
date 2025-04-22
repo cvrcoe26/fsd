@@ -1,7 +1,8 @@
 // in command prompt, run the following command
 // npx create-react-app@latest my-app
 // cd my-app
-// replace the below code in the src/App.js file and create a new file named Child.js
+// in the src folder => remove the code from App.js file and add the below app.js code
+// in the src folder => create Child.js file and add the below Child.js code
 // run the following command in terminal to start the app
 // npm start
 
