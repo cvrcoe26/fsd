@@ -1,19 +1,32 @@
-first, create a repository and create some files in it
-git clone https://github.com/your-username/repo-name.git
-cd repo-name
+first, create a repository named demoapp and create index.html file and some more other files in that repository
+open command prompt and execute the following commands
+
+
+git clone https://github.com/your-username/demoapp.git
+cd demoapp
 Edit any file using your editor (e.g. index.html, style.css, etc.)
 git add .
+git config user.name "your_github_username"
+git config  user.email "your_github_email"
 git commit -m "Modified UI and content"
 git push origin main
 
+// a popup will open, asking you to sign in with your browser or sign in with a code
+// choose signin with your browser and authenticate it with your github account
 
 git checkout -b header-part
-make some changes
+
+make some changes to the code and execute the below command
+
 git add . && git commit -m "Added header" && git push origin header-part
+
+
 
 git checkout main
 git checkout -b footer-part
-make some changes (dont make changes to a same line in the above and the current step)
+
+NOTE: make some changes and execute the below commands(dont make changes to a same lines as changed in the above step)
+
 git add . && git commit -m "Added footer" && git push origin footer-part
 git checkout main
 git pull origin main
@@ -30,4 +43,4 @@ Under Branch, choose:
 Branch: main
 Folder: / (root)
 Click Save.
-After a few seconds, access the app at https://your-username.github.io/repo-name/
+After a few seconds, access the app at https://your-username.github.io/demoapp/
