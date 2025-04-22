@@ -2,7 +2,7 @@
 // npx create-react-app@latest my-app
 // cd my-app
 // npm install react-router-dom
-// replace the below code in the src/App.js file
+// in src folder => App.js file => remove the code and add the below code
 // run the following command in terminal to start the app
 // npm start
 
