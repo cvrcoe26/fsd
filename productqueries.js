@@ -1,4 +1,6 @@
 // in mongo shell, run the following commands one by one
+// if mongodb is not installed, install it from https://www.mongodb.com/try/download/community-kubernetes-operator
+
 
 use mydatabase;
 db.products.insertMany([
