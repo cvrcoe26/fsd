@@ -1,5 +1,5 @@
 // first create a folder
-// command prompt navigate to that folder
+// open command prompt and navigate to that folder
 // run the following commands
 // npm init -y
 // npm install express mongoose
@@ -42,16 +42,36 @@ app.delete('/movies/:id', async (req, res) => {
 });
 app.listen(3000, () => console.log('Server running'));
 
-// To test the API, use Postman
+// To test the API, use Postman (app) => if it is not working, use thunderclient vscode extension
 // 1. Create a new movie
-//    method: POST http://localhost:3000/movies
-//    Body: { "title": "Inception", "director": "Christopher Nolan", "releaseYear": 2010, "genre": "Sci-Fi" }
+//    method: POST 
+      url:      http://localhost:3000/movies
+//    Body: 
+      { 
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "releaseYear": 2010,
+        "genre": "Sci-Fi"
+      }
 // 2. Get all movies
-//    method: GET http://localhost:3000/movies
-// 3. Get a movie by ID
-//    method: GET http://localhost:3000/movies/use_movie_id_here
+//    method: GET 
+      url:    http://localhost:3000/movies
+// 3. Get a movie by ID ( use _id from the above question)
+//    method: GET 
+      url:    http://localhost:3000/movies/use_movie_id_here
+      example:      http://localhost:3000/movies/650f0a8c76c937ec420828ca
 // 4. Update a movie
-//    method: PUT http://localhost:3000/movies/use_movie_id_here
-//    Body: { "title": "Inception", "director": "Christopher Nolan", "releaseYear": 2010, "genre": "Sci-Fi" }
-// 5. Delete a movie
-//    method: DELETE http://localhost:3000/movies/use_movie_id_here
+//    method: PUT (same _id as used in the above question)
+      url:       http://localhost:3000/movies/use_movie_id_here
+      example:       http://localhost:3000/movies/650f0a8c76c937ec420828ca
+//    Body: 
+      { 
+          "title": "Inception",
+          "director": "Christopher Nolan",
+          "releaseYear": 2010,
+          "genre": "Sci-Fi"
+      }
+// 5. Delete a movie (use same _id)
+//    method: DELETE
+      url:       http://localhost:3000/movies/use_movie_id_here
+      example:     http://localhost:3000/movies/650f0a8c76c937ec420828ca
